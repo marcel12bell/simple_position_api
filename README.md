@@ -16,14 +16,13 @@ check for correct postgresql port (5432)
 and pg_hba.conf if needed...
 
 * Database creation
+bundle install
 rake db:setup
+rake db:migrate
 
 * Database initialization
+Data used from https://kvb.koeln/service/open_data.html for seed.rb
+rake db:seed
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
