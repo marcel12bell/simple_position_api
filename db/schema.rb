@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2020_09_11_062945) do
 
   create_table "stations", force: :cascade do |t|
     t.string "name"
-    t.float "longitude"
-    t.float "latitude"
+    t.float "lng"
+    t.float "lat"
   end
 
 end

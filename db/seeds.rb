@@ -2069,5 +2069,5 @@ rows.each do |row|
   name = row[1]
   longitude = row[4]
   latitude = row[5]
-  Station.create(name: name, longitude: longitude, latitude: latitude)
+  Station.create(name: name, lng: longitude, lat: latitude)
 end

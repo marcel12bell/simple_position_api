@@ -24,5 +24,11 @@ rake db:migrate
 Data used from https://kvb.koeln/service/open_data.html for seed.rb
 rake db:seed
 
-* How to run the test suite
+* Example
+rails s
+
+curl --header "Content-Type: application/json" \
+  --request GET \
+  --data '{"longitude":6.8939,"latitude":51.127785787}' \
+  127.0.0.1:3000/api/v1/stations/search_by_position
 
